@@ -61,5 +61,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   # disable blocked host
-  config.hosts = nil
+  config.hosts.clear
 end
