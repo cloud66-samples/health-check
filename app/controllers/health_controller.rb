@@ -7,4 +7,8 @@ class HealthController < ApplicationController
     return render nothing: true, status: :service_unavailable if DateTime.now <= @@time_controller_first_hit + HEALTH_UNAVAILABLE_FOR
     return render nothing: true
   end
+
+  def healthz
+    return render nothing: true
+  end
 end
