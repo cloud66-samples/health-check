@@ -13,7 +13,7 @@ class HealthController < ApplicationController
   end
 
   def sleepy_health
-    sleep(0.0..1.0)
+    sleep rand(0.0..1.0)
     return render nothing: true
   end
 end
