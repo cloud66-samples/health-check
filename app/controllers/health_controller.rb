@@ -11,4 +11,9 @@ class HealthController < ApplicationController
   def healthz
     return render nothing: true
   end
+
+  def sleepy_health
+    sleep(0.0..1.0)
+    return render nothing: true
+  end
 end
